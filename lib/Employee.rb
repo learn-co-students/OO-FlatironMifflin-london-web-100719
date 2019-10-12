@@ -1,7 +1,7 @@
 class Employee
 
     attr_accessor  :salary, :manager
-    attr_reader
+    attr_reader ;name
 
     @@all=  []
 
