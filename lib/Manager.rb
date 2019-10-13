@@ -14,6 +14,10 @@ class Manager
         Employee.all.select {|element| element.manager == manager_name}
     end
 
+    def hire_employee(employee_name, salary)
+        Employee.new(employee_name, salary, self)
+    end 
+
     def self.all_department
         Manager.all.map{|element| element.department}
     end 
